@@ -87,3 +87,8 @@ $
 All tests should also pass in non-interactive mode: *$ echo "python3 -m unittest discover tests" | bash*
 
 ![console](console.png)
+
+## AUTHORS:
+
+- *Binael Nchekwube* - [Binael](https://github.com/binael)
+- *Lema Kefyalew* - []()
