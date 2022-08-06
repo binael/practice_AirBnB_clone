@@ -1,2 +1,1 @@
-# practice_AirBnB_clone
-THIS IS FOR TESTING AND ROUGH CODING OF ALX ABnB CLONE PROJECT
+# AirBnB clone - The console
