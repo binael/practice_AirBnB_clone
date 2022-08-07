@@ -36,6 +36,7 @@ class BaseModel:
                                                            format)
                 else:
                     self.__dict__[key] = value
+        models.storage.new(self)
 
     def __str__(self):
         """
@@ -51,6 +52,7 @@ class BaseModel:
         current datetime
         """
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """
