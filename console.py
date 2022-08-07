@@ -9,7 +9,6 @@ from models.base_model import BaseModel
 class HBNBCommand(cmd.Cmd):
     """The command interpreter"""
 
-
     __classes = ["BaseModel",
                  "User",
                  "State",
@@ -104,7 +103,7 @@ class HBNBCommand(cmd.Cmd):
                 if arg == class_name:
                     check = True
                     class_list.append("{}".format(storage.all()[key]))
-            if check == False:
+            if check is False:
                 print("** class doesn't exist **")
                 return
         print(class_list)
@@ -137,6 +136,7 @@ class HBNBCommand(cmd.Cmd):
             return
         setattr(storage.all()[name_id], arg_list[2], arg_list[3])
         storage.save()
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
